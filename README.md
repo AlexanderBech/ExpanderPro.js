@@ -5,6 +5,7 @@ jQuery plugin for expanding and collapsing HTML content with many optional setti
 
 Usage
 ==================
+```javascript
 $('.list').expanderpro({
     expandItem: "expandee",  	  // Item class
 		triggerClass: "trigger",	  // Trigger class
@@ -18,18 +19,21 @@ $('.list').expanderpro({
 		preventClosing: false,		  // If true, expanded item will not close on trigger
 		openFirst: false			      // If true, first item will open at init
 });
+```
 
+```html
 <section class="list">
   <div class="expandee">
-    <div class="trigger">Lorem ipsum</div>
-    <div class="target">Lorem ipsum dolor sit amet</div>
+    <div class="trigger">Trigger</div>
+    <div class="target">Target</div>
   </div>
   <div class="expandee">
-    <div class="trigger">Lorem ipsum</div>
-    <div class="target">Lorem ipsum dolor sit amet</div>
+    <div class="trigger">Trigger</div>
+    <div class="target">Target</div>
   </div>
   <div class="expandee">
-    <div class="trigger">Lorem ipsum</div>
-    <div class="target">Lorem ipsum dolor sit amet</div>
+    <div class="trigger">Trigger</div>
+    <div class="target">Target</div>
   </div>
 </div>
+```
