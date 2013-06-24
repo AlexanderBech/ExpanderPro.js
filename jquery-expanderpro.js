@@ -39,8 +39,11 @@
 	  				// Close others?
 	  				if(_opts.closeOthers){ $('.'+_opts.targetClass, $container).stop().slideUp(_opts.animSpeed); $('.'+_opts.expandItem, $container).removeClass(_opts.expandedClass); }
 	  				// Anim target
-	  				if(_opts.preventClosing){ $target.stop().slideDown(_opts.animSpeed); $item.addClass(_opts.expandedClass);
-	  				} else { $target.stop().slideToggle(_opts.animSpeed,function(){$item.addClass(_opts.expandedClass)}); }
+	  				if(_opts.preventClosing){
+	  					$target.stop().slideDown(_opts.animSpeed); $item.addClass(_opts.expandedClass);
+	  				} else {
+	  					$target.stop().slideToggle(_opts.animSpeed); $item.toggleClass(_opts.expandedClass);
+	  				}
 	  			});
   			});
   		});
