@@ -3,6 +3,8 @@ jquery-expanderpro
 
 jQuery plugin for expanding and collapsing HTML content with many optional settings
 
+Example: http://alexanderbech.com/work/jquery-expanderpro/
+
 Usage
 ==================
 ```javascript
