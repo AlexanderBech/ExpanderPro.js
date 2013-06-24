@@ -7,6 +7,7 @@ Example: http://alexanderbech.com/work/jquery-expanderpro/
 
 Usage
 ==================
+Include jQuery 1.7+ and jquery-expanderpro.js in your layout and target your lists container with expanderPro().
 ```javascript
 $('.list').expanderpro({
 	expandItem: "expandee", 	// Item class
