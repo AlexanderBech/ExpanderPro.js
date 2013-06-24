@@ -25,6 +25,8 @@ $('.list').expanderpro({
 ```
 
 ```html
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="jquery-expanderpro.min.js"></script>
 <section class="list">
   <div class="expandee">
     <div class="trigger">Trigger</div>
