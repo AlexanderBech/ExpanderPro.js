@@ -1,5 +1,5 @@
 /* =========================================================
-*	ExpanderPro 1.0
+*	ExpanderPro.js 1.0
 *	Author: Alexander Bech / www.alexanderbech.com
 *	http://github.com/AlexanderBech/jquery-expanderpro
 * ========================================================== */
