@@ -9,7 +9,7 @@ Usage
 ==================
 Include jQuery 1.7+ and jquery-expanderpro.js in your layout and target your lists container with expanderPro().
 ```javascript
-$('.list').expanderpro({
+$('.list').expanderPro({
 	expandItem: "expandee", 	// Item class
 	triggerClass: "trigger", 	// Trigger class
 	targetClass: "target", 		// Target class
