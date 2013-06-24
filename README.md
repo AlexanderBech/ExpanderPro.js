@@ -1,4 +1,4 @@
-jquery-expanderpro
+ExpanderPro.js
 ==================
 
 jQuery plugin for expanding and collapsing HTML content with many optional settings
@@ -7,7 +7,7 @@ Example: http://alexanderbech.com/work/jquery-expanderpro/
 
 Usage
 ==================
-Include jQuery 1.7+ and jquery-expanderpro.js in your layout and target your list container with expanderPro().
+Include jQuery 1.7+ and jquery.expanderpro.js in your layout and target your list container with expanderPro().
 ```javascript
 $('.list').expanderPro({
 	expandItem: "expandee", 	// Item class
@@ -26,7 +26,7 @@ $('.list').expanderPro({
 
 ```html
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script src="jquery-expanderpro.min.js"></script>
+<script src="jquery.expanderpro.min.js"></script>
 
 <section class="list">
   <div class="expandee">
