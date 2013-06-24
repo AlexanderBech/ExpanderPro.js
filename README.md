@@ -12,7 +12,7 @@ $('.list').expanderpro({
 	targetClass: "target", 		// Target class
 	expandedClass: "expanded", 	// Expanded class
 	hideTrigger: false, 		// If true, will hide trigger on select
-	animSpeed: 500, 			// Animation speed in miliseconds
+	animSpeed: 500, 			// Animation speed in milliseconds
 	hoverClass: "over", 		// If not null, will add class on hover
 	closeOthers: false, 		// If true, will close other elements than selected,
 	startExpanded: false, 		// If true, target will start expanded
