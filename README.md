@@ -41,5 +41,5 @@ $('.list').expanderPro({
     <div class="trigger">Trigger</div>
     <div class="target">Target</div>
   </div>
-</div>
+</section>
 ```
