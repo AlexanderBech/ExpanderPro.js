@@ -1,4 +1,4 @@
-ExpanderPro.js
+ExpanderPro.js - 2.0
 ==================
 
 jQuery plugin for expanding and collapsing HTML content with many optional settings
