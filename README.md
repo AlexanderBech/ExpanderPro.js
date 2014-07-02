@@ -21,8 +21,8 @@ $('.list').expanderPro({
 	startExpanded: false, 		// If true, target will start expanded
 	preventClosing: false, 		// If true, expanded item will not close on trigger
 	openFirst: false, 			// If true, first item will open at init
-	callbackOpen: null,     // Callback on open
-	callbackClose: null     // Callback on close
+	callbackOpen: null,        // Callback on open
+	callbackClose: null        // Callback on close
 });
 ```
 
