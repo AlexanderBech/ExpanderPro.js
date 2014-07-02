@@ -36,13 +36,18 @@
 	  			if(_opts.hoverClass != null) $item.on({mouseenter:function(){$item.addClass(_opts.hoverClass)},mouseleave:function(){$item.removeClass(_opts.hoverClass)}});
 	  			// Trigger
 	  			$trigger.on("click", function(e){ e.preventDefault();
+	  				var callbackObject = {
+	  					'item': $item,
+	  					'trigger': $trigger,
+	  					'target': $target
+	  				}
 	  				// Callback open
 	  				if(_opts.callbackOpen != null && $item.hasClass(_opts.expandedClass) == false){
-	  					_opts.callbackOpen();
+	  					_opts.callbackOpen(callbackObject);
 	  				}
 	  				// Callback close
 	  				if(_opts.callbackClose != null && $item.hasClass(_opts.expandedClass)){
-	  					_opts.callbackClose();
+	  					_opts.callbackClose(callbackObject);
 	  				}
 	  				// Hide trigger?
 	  				if(_opts.hideTrigger) $trigger.hide();
