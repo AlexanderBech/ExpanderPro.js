@@ -1,5 +1,5 @@
 /* =========================================================
-*	ExpanderPro.js 1.0
+*	ExpanderPro.js 2.0
 *	Author: Alexander Bech / www.alexanderbech.com
 *	http://github.com/AlexanderBech/ExpanderPro.js
 * ========================================================== */
@@ -15,7 +15,9 @@
 		closeOthers: false,			// If true, will close other elements than selected,
 		startExpanded: false,		// If true, target will start expanded
 		preventClosing: false,		// If true, expanded item will not close on trigger
-		openFirst: false			// If true, first item will open at init
+		openFirst: false,			// If true, first item will open at init
+		callbackOpen: null,			// Callback on open
+		callbackClose: null			// Callback on close
 	};
 	$.fn.expanderPro = function(options){
   		var _opts = $.extend({}, _default, options);
@@ -34,6 +36,14 @@
 	  			if(_opts.hoverClass != null) $item.on({mouseenter:function(){$item.addClass(_opts.hoverClass)},mouseleave:function(){$item.removeClass(_opts.hoverClass)}});
 	  			// Trigger
 	  			$trigger.on("click", function(e){ e.preventDefault();
+	  				// Callback open
+	  				if(_opts.callbackOpen != null && $item.hasClass(_opts.expandedClass) == false){
+	  					_opts.callbackOpen();
+	  				}
+	  				// Callback close
+	  				if(_opts.callbackClose != null && $item.hasClass(_opts.expandedClass)){
+	  					_opts.callbackClose();
+	  				}
 	  				// Hide trigger?
 	  				if(_opts.hideTrigger) $trigger.hide();
 	  				// Close others?
